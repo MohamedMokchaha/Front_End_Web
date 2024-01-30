@@ -1,0 +1,23 @@
+<div  class="body" style="background-image: url('/assets/img/full-screen-image-3.jpg')">
+    <app-header1></app-header1>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navigation" >
+
+    <div class="row"> <div class="col-md-6">
+
+        <div class="card"> <form onsubmit="event.preventDefault()" class="box">
+            <h1>Login</h1>
+            <p class="text-muted"> Please enter your login and password!</p>
+            <input type="text" name="email" placeholder="email" [(ngModel)]="userData.email">
+            <input type="password" name="password" placeholder="password" [(ngModel)]="userData.password">
+            <a class="forgot text-muted" >Forgot password?</a>
+            <div *ngIf="!isAuthenticated()">
+                <input type="submit" name="" value="Login" (click)="login()" >
+            </div>
+
+            <div class="col-md-12"> <ul class="social-network social-circle">
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li> </ul> </div> </form> </div> </div> </div>
+    </div>
+    </div>
